@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<!-- 변경할 설정 스크립트 파일이 위치.
+	jQuery.js 와 jQuery.mobile.js 파일 사이에 위치.
+-->
+<script type="text/javascript">
+	$(document).bind("mobileinit", function(){
+		$.mobile.ajaxEnable = false;				// ajax 설정. 기본값은 true.
+		$.mobile.defaultPageTransition = 'slide';	// 기본 페이지 전환효과. 기본값은 fade.
+	});
+</script>
+<script	src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="header">
+			<h1>My Title</h1>
+		</div>
+		<div data-role="content">
+			<ul data-role="listview" data-theme="b">
+			    <li><a href="acura.html">Acura</a></li>
+			    <li><a href="audi.html">Audi</a></li>
+			    <li><a href="bmw.html">BMW</a></li>
+			</ul>
+		</div>
+		<div data-role="footer"></div>
+	</div>
+</body>
+</html>
